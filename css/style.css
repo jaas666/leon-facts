@@ -39,16 +39,23 @@ body {
 
 .container {
   display: grid; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 1fr; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "."; 
+    ". . ."
+    ". CenterArea ."
+    ". . ."; 
   justify-content: center; 
   align-content: center; 
   justify-items: center; 
-  align-items: center;
+  align-items: center; 
 }
+
+.CenterArea { 
+   grid-area: CenterArea;
+}
+
 
 p {
   position: absolute;
